@@ -1,0 +1,1329 @@
+1                                                          The SAS System                          11:26 Thursday, September 5, 1996
+
+NOTE: Copyright (c) 1989-1995 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software Release 6.11  TS020
+      
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the files "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+NOTE: AUTOEXEC processing beginning; file is /xxxxxxxx/src/BMS/srs2/u05/autoexec.srs.
+
+NOTE: SAS initialization used:
+      real time           3.711 seconds
+      cpu time            0.508 seconds
+      
+WARNING: Apparent symbolic reference UCDTE not resolved.
+WARNING: Apparent symbolic reference UCDTE not resolved.
+WARNING: Apparent symbolic reference UCDTE not resolved.
+WARNING: Apparent symbolic reference UCDTE not resolved.
+WARNING: Apparent symbolic reference UPDTE not resolved.
+WARNING: Apparent symbolic reference UPDTE not resolved.
+MPRINT(UTLOPTS):   NOTES NOOVP CMDMAC MEMSIZE=0 ERRORS=2 SOURCE2 MLOGIC MPRINT NOCENTER 
+LS=91 PS=63 MTRACE NUMBER FULLSTIMER NODATE;
+MPRINT(UTLOPTS):   RUN;
+MLOGIC(UTLOPTS):  Ending execution.
+MLOGIC(UTLSTRT):  Beginning execution.
+MLOGIC(UTLSTRT):  %GLOBAL  UTLSTRT
+MLOGIC(UTLDTYM):  Beginning execution.
+MLOGIC(UTLDTYM):  %GLOBAL  UTLDTYM UTLDTYM1 UTLDTYM2
+WARNING: The BASE Product product with which DATASTEP is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(UTLDTYM):   DATA _NULL_;
+MPRINT(UTLDTYM):   LENGTH UTLDTYM $16. UTLDTYM1 $11.;
+MPRINT(UTLDTYM):  ;
+MPRINT(UTLDTYM):   UTLDTYM= PUT(TODAY(),DATE7.)!!' '!!PUT(TIME(),TIME.);
+MPRINT(UTLDTYM):   UTLDTYM1= PUT(TODAY(),YYMMDD6.)!!'.'!!COMPRESS(PUT(TIME(),TIME5.),":.");
+MPRINT(UTLDTYM):   UTLDTYM2=DATETIME();
+MPRINT(UTLDTYM):   CALL SYMPUT('utldtym',UTLDTYM);
+MPRINT(UTLDTYM):   CALL SYMPUT('utldtym1',UTLDTYM1);
+MPRINT(UTLDTYM):   CALL SYMPUT('utldtym2',UTLDTYM2);
+MPRINT(UTLDTYM):   RUN;
+
+NOTE: Numeric values have been converted to character values at the places given by: 
+      (Line):(Column).
+      1:55   
+NOTE: DATA statement used:
+      time:                           memory:
+         real        2.520 seconds       page faults   13 
+         user cpu    0.049 seconds       page reclaims 0 
+         system cpu  0.164 seconds       usage         33 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     34
+         output      3                   involuntary   16
+      
+2 The SAS System
+
+
+MLOGIC(UTLDTYM):  %PUT utldtym= &utldtym
+SYMBOLGEN:  Macro variable UTLDTYM resolves to 05SEP96 11:26:33
+utldtym= 05SEP96 11:26:33
+MLOGIC(UTLDTYM):  %PUT utldtym1= &utldtym1
+SYMBOLGEN:  Macro variable UTLDTYM1 resolves to 960905.1126
+utldtym1= 960905.1126
+MLOGIC(UTLDTYM):  %PUT utldtym2= &utldtym2
+SYMBOLGEN:  Macro variable UTLDTYM2 resolves to 1157541992.9
+utldtym2= 1157541992.9
+MLOGIC(UTLDTYM):  Ending execution.
+MPRINT(UTLSTRT):  ;
+MLOGIC(UTLSTRT):  %LET (variable name is UTLSTRT)
+SYMBOLGEN:  Macro variable UTLDTYM2 resolves to 1157541992.9
+NOTE: The description for the macro parameter /DES = will be truncated to 40 characters.
+MLOGIC(UTLRCDE):  Beginning execution.
+SYMBOLGEN:  Macro variable UOBJ resolves to u0505aa
+SYMBOLGEN:  Macro variable UTLDTYM resolves to 05SEP96 11:26:33
+MLOGIC(UTLRCDE):  Parameter DSCRPTN has value u0505aa started at 05SEP96 11:26:33
+MLOGIC(UTLRCDE):  %GLOBAL  UTLRCDE
+SYMBOLGEN:  Macro variable SYSERR resolves to 0
+SYMBOLGEN:  Macro variable UTLRCDE resolves to 
+MLOGIC(UTLRCDE):  %IF condition &syserr gt &utlrcde is TRUE
+MLOGIC(UTLRCDE):  %LET (variable name is UTLRCDE)
+SYMBOLGEN:  Macro variable SYSERR resolves to 0
+MLOGIC(UTLRCDE):  %LET (variable name is DSCRPTN)
+MLOGIC(QCMPRES):  Beginning execution.
+SYMBOLGEN:  Macro variable DSCRPTN resolves to u0505aa started at 05SEP96 11:26:33
+MLOGIC(QCMPRES):  Parameter TEXT has value u0505aa started at 05SEP96 11:26:33
+MLOGIC(QCMPRES):  %LOCAL  i
+MLOGIC(QCMPRES):  %LET (variable name is I)
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Macro variable I resolves to 0
+MLOGIC(QCMPRES):  %DO %WHILE(&i^=0) loop beginning; condition is FALSE.  Loop will not be 
+                  executed.
+MLOGIC(QLEFT):  Beginning execution.
+MLOGIC(QTRIM):  Beginning execution.
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+MLOGIC(QTRIM):  Parameter VALUE has value u0505aa started at 05SEP96 11:26:33
+MLOGIC(QTRIM):  %LOCAL  i
+SYMBOLGEN:  Macro variable VALUE resolves to u0505aa started at 05SEP96 11:26:33
+MLOGIC(QTRIM):  %DO loop beginning; index variable I; start value is 35; stop value is 1; 
+                by value is -1.  
+SYMBOLGEN:  Macro variable VALUE resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Macro variable I resolves to 35
+MLOGIC(QTRIM):  %IF condition %qsubstr(&value,&i,1)^=  is TRUE
+MLOGIC(QTRIM):  %GOTO trimmed (label resolves to TRIMMED).
+SYMBOLGEN:  Macro variable I resolves to 35
+MLOGIC(QTRIM):  %IF condition &i>0 is TRUE
+SYMBOLGEN:  Macro variable VALUE resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Macro variable I resolves to 35
+MLOGIC(QTRIM):  Ending execution.
+MLOGIC(QLEFT):  Parameter TEXT has value u0505aa started at 05SEP96 11:26:33
+MLOGIC(QLEFT):  %LOCAL  i
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MLOGIC(QLEFT):  %IF condition %length(&text)=0 is FALSE
+MLOGIC(QLEFT):  %LET (variable name is I)
+MLOGIC(VERIFY):  Beginning execution.
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+3 The SAS System
+
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MLOGIC(VERIFY):  Parameter TEXT has value u0505aa started at 05SEP96 11:26:33
+MLOGIC(VERIFY):  Parameter TARGET has value  
+MLOGIC(VERIFY):  %LOCAL  i
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+SYMBOLGEN:  Macro variable TARGET resolves to  
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MLOGIC(VERIFY):  %IF condition %length(&text)=0 | %length(&target)=0 is FALSE
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MLOGIC(VERIFY):  %DO loop beginning; index variable I; start value is 1; stop value is 35; 
+                 by value is 1.  
+SYMBOLGEN:  Macro variable TARGET resolves to  
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+SYMBOLGEN:  Macro variable I resolves to 1
+MLOGIC(VERIFY):  %IF condition ^%index(&target,%qsubstr(&text,&i,1)) is TRUE
+MLOGIC(VERIFY):  %GOTO verfnd (label resolves to VERFND).
+SYMBOLGEN:  Macro variable I resolves to 1
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MLOGIC(VERIFY):  %IF condition &i>%length(&text) is FALSE
+SYMBOLGEN:  Macro variable I resolves to 1
+MLOGIC(VERIFY):  Ending execution.
+SYMBOLGEN:  Macro variable I resolves to 1
+MLOGIC(QLEFT):  %IF condition &i is TRUE
+SYMBOLGEN:  Macro variable TEXT resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+SYMBOLGEN:  Macro variable I resolves to 1
+MLOGIC(QLEFT):  Ending execution.
+MLOGIC(QCMPRES):  Ending execution.
+SYMBOLGEN:  Macro variable UTLRCDE resolves to 0
+MLOGIC(UTLRCDE):  %IF condition &utlrcde= is FALSE
+SYMBOLGEN:  Macro variable SYSERR resolves to 0
+SYMBOLGEN:  Macro variable DSCRPTN resolves to u0505aa started at 05SEP96 11:26:33
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have 
+            been unquoted for printing.
+MPRINT(UTLRCDE):   X echo "RC=0 u0505aa started at 05SEP96 11:26:33";
+MPRINT(UTLRCDE):   RUN;
+MLOGIC(UTLRCDE):  Ending execution.
+MPRINT(UTLSTRT):  ;
+MLOGIC(UTLSTRT):  Ending execution.
+MPRINT(U0505AA):  ;
+MLOGIC(U0505AA):  %LET (variable name is UYR)
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+WARNING: The BASE Product product with which DATASTEP is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   DATA _NULL_;
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   MNTH = INPUT("19960701",YYMMDD8.);
+MPRINT(U0505AA):   CMNTH = PUT(MNTH,MONNAME.);
+4 The SAS System
+
+MPRINT(U0505AA):   CALL SYMPUT('ucmnth',CMNTH);
+SYMBOLGEN:  Macro variable UPDTE resolves to 199606
+MPRINT(U0505AA):   MNTH = INPUT("19960601",YYMMDD8.);
+MPRINT(U0505AA):   PMNTH = PUT(MNTH,MONNAME.);
+MPRINT(U0505AA):   CALL SYMPUT('upmnth',PMNTH);
+MPRINT(U0505AA):   RUN;
+
+NOTE: DATA statement used:
+      time:                           memory:
+         real        0.513 seconds       page faults   1 
+         user cpu    0.027 seconds       page reclaims 0 
+         system cpu  0.064 seconds       usage         33 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     8
+         output      1                   involuntary   10
+      
+
+SYMBOLGEN:  Macro variable ULIBR resolves to /xxxxxxxx/yearly/&ucdte/library
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   LIBNAME LIBRARY "/xxxxxxxx/yearly/199607/library";
+NOTE: Library LIBRARY does not exist.
+SYMBOLGEN:  Macro variable UIN6 resolves to /xxxxxxxx/monthly/&ucdte/u06
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   LIBNAME UIN6 "/xxxxxxxx/monthly/199607/u06" ;
+NOTE: Library UIN6 does not exist.
+SYMBOLGEN:  Macro variable UIN11 resolves to /xxxxxxxx/monthly/&ucdte/u09
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   LIBNAME UIN11 "/xxxxxxxx/monthly/199607/u09";
+NOTE: Library UIN11 does not exist.
+SYMBOLGEN:  Macro variable UIN12 resolves to /xxxxxxxx/monthly/&ucdte/u10
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   LIBNAME UIN12 "/xxxxxxxx/monthly/199607/u10";
+NOTE: Library UIN12 does not exist.
+SYMBOLGEN:  Macro variable UIN21 resolves to /xxxxxxxx/monthly/&updte/u09
+SYMBOLGEN:  Macro variable UPDTE resolves to 199606
+MPRINT(U0505AA):   LIBNAME UIN21 "/xxxxxxxx/monthly/199606/u09";
+NOTE: Library UIN21 does not exist.
+SYMBOLGEN:  Macro variable UIN22 resolves to /xxxxxxxx/monthly/&updte/u10
+SYMBOLGEN:  Macro variable UPDTE resolves to 199606
+MPRINT(U0505AA):   LIBNAME UIN22 "/xxxxxxxx/monthly/199606/u10";
+NOTE: Library UIN22 does not exist.
+SYMBOLGEN:  Macro variable UOT resolves to /xxxxxxxx/daily/tmp
+MPRINT(U0505AA):   LIBNAME UOT "/xxxxxxxx/daily/tmp";
+NOTE: Library UOT does not exist.
+MPRINT(U0505AA):   RUN;
+MLOGIC(U0505AA):  %LET (variable name is UPYTD)
+SYMBOLGEN:  Macro variable UPDTE resolves to 199606
+MLOGIC(U0505AA):  %LET (variable name is UCYTD)
+SYMBOLGEN:  Macro variable UCDTE resolves to 199607
+MPRINT(U0505AA):   *U0012MKT (INSDL=UIN6, INSDN=&UIN6MEM );
+MLOGIC(U0505AA):  %LET (variable name is U0012MKT)
+MLOGIC(U0505AA):  %LET (variable name is U00121)
+MLOGIC(U0505AA):  %LET (variable name is U00122)
+MLOGIC(U0505AA):  %DO loop beginning; index variable UMONTH; start value is 1; stop value 
+                  is 2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+WARNING: The BASE Product product with which DATASTEP is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MPRINT(U0505AA):   DATA U0505AA1 ( LABEL=1 1-pre 2-cur Mkt Prd and cats );
+MLOGIC(U0505AA):  %DO loop beginning; index variable UK; start value is 1; stop value is 
+5 The SAS System
+
+                  4; by value is 1.  
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 1
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 1
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINP1 resolves to u05aa
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 1
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 1
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINP1 resolves to u05aa
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 2
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 2
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINP2 resolves to u05da
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 2
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 2
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINP2 resolves to u05da
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 3; loop will  iterate again.
+6 The SAS System
+
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 3
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 3
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINP3 resolves to u05ba
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 3
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 3
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINP3 resolves to u05ba
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 4; loop will  iterate again.
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 4
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 4
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINP4 resolves to u05ca
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UK resolves to 4
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 4
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINP4 resolves to u05ca
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 5; loop will not iterate again.
+NOTE: Line generated by the invoked macro "U0505AA".
+7 The SAS System
+
+1                   ;          if put( bmsmkt!!bmsprd, $prd2rpt. ) eq "Y";
+                                                       _________
+                                                       31
+MPRINT(U0505AA):   SET UIN11.U05AA002 UIN11.U05AA003 UIN11.U05DA002 UIN11.U05DA003 
+UIN12.U05BA002 UIN12.U05BA003 UIN12.U05CA002 UIN12.U05CA003 ;
+ERROR: File UIN11.U05AA002.DATA does not exist.
+ERROR: File UIN11.U05AA003.DATA does not exist.
+ERROR: File UIN11.U05DA002.DATA does not exist.
+ERROR: File UIN11.U05DA003.DATA does not exist.
+ERROR: File UIN12.U05BA002.DATA does not exist.
+ERROR: File UIN12.U05BA003.DATA does not exist.
+ERROR: File UIN12.U05CA002.DATA does not exist.
+ERROR: File UIN12.U05CA003.DATA does not exist.
+MPRINT(U0505AA):   IF PUT( BMSMKT!!BMSPRD, $PRD2RPT. ) EQ "Y";
+SYMBOLGEN:  Macro variable UMONTH resolves to 1
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is TRUE
+SYMBOLGEN:  Macro variable UPYTD resolves to 06
+MPRINT(U0505AA):   PREYTD = SUM ( OF TDIME1 - TDIME06 );
+MPRINT(U0505AA):   MKTPRDC = BMSMKT!!BMSPRD!!CATEGORY;
+MPRINT(U0505AA):   KEEP MKTPRDC PREYTD CATEGORY;
+MLOGIC(U0505AA):  %DO loop index variable UMONTH is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+
+ERROR 31-185: Format $PRD2RPT is unknown.
+
+NOTE: Numeric values have been converted to character values at the places given by: 
+      (Line):(Column).
+      1:29    1:37    1:85    1:93    1:101   
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: SAS set option OBS=0 and will continue to check statements. 
+      This may cause NOTE: No observations in data set.
+WARNING: The data set WORK.U0505AA1 may be incomplete.  When this step was stopped there 
+         were 0 observations and 3 variables.
+NOTE: DATA statement used:
+      time:                           memory:
+         real        2.593 seconds       page faults   5 
+         user cpu    0.140 seconds       page reclaims 0 
+         system cpu  0.127 seconds       usage         28 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     64
+         output      5                   involuntary   15
+837   libname sd1 "d:/sd1";
+NOTE: Libref SD1 was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: d:\sd1
+838   data sd1.class;
+839     set sashelp.class;
+840   run;
+
+NOTE: There were 19 observations read from the data set SASHELP.CLASS.
+NOTE: The data set SD1.CLASS has 19 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+
+
+840 !     quit;
+841   data sd1.cars;
+842     set sashelp.cars;;
+843   run;
+
+NOTE: There were 428 observations read from the data set SASHELP.CARS.
+NOTE: The data set SD1.CARS has 428 observations and 15 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+843 !     quit;
+
+      
+
+
+WARNING: The BASE Product product with which DATASTEP is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MPRINT(U0505AA):   DATA U0505AA2 ( LABEL=2 1-pre 2-cur Mkt Prd and cats );
+MLOGIC(U0505AA):  %DO loop beginning; index variable UK; start value is 1; stop value is 
+                  4; by value is 1.  
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 1
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 1
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+8 The SAS System
+
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINC1 resolves to u05aa
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 1
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 1
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINC1 resolves to u05aa
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 2
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 2
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINC2 resolves to u05da
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 2
+MLOGIC(U0505AA):  %IF condition &uk le 2 is TRUE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 2
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINC2 resolves to u05da
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 3; loop will  iterate again.
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 3
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 3
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+9 The SAS System
+
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINC3 resolves to u05ba
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 3
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 3
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINC3 resolves to u05ba
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 4; loop will  iterate again.
+SYMBOLGEN:  Macro variable U0012MKT resolves to 2
+MLOGIC(U0505AA):  %DO loop beginning; index variable UI; start value is 1; stop value is 
+                  2; by value is 1.  
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 4
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 4
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 1
+SYMBOLGEN:  Macro variable UINC4 resolves to u05ca
+SYMBOLGEN:  Macro variable U00121 resolves to 002
+MLOGIC(U0505AA):  %DO loop index variable UI is now 2; loop will  iterate again.
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UK resolves to 4
+MLOGIC(U0505AA):  %IF condition &uk le 2 is FALSE
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UK resolves to 4
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable UI resolves to 2
+SYMBOLGEN:  Macro variable UINC4 resolves to u05ca
+SYMBOLGEN:  Macro variable U00122 resolves to 003
+MLOGIC(U0505AA):  %DO loop index variable UI is now 3; loop will not iterate again.
+MLOGIC(U0505AA):  %DO loop index variable UK is now 5; loop will not iterate again.
+NOTE: Line generated by the invoked macro "U0505AA".
+1                   ;          if put( bmsmkt!!bmsprd, $prd2rpt. ) eq "Y";
+                                                       _________
+                                                       31
+MPRINT(U0505AA):   SET UIN21.U05AA002 UIN21.U05AA003 UIN21.U05DA002 UIN21.U05DA003 
+UIN22.U05BA002 UIN22.U05BA003 UIN22.U05CA002 UIN22.U05CA003 ;
+ERROR: File UIN21.U05AA002.DATA does not exist.
+ERROR: File UIN21.U05AA003.DATA does not exist.
+ERROR: File UIN21.U05DA002.DATA does not exist.
+ERROR: File UIN21.U05DA003.DATA does not exist.
+ERROR: File UIN22.U05BA002.DATA does not exist.
+ERROR: File UIN22.U05BA003.DATA does not exist.
+ERROR: File UIN22.U05CA002.DATA does not exist.
+10 The SAS System
+
+ERROR: File UIN22.U05CA003.DATA does not exist.
+MPRINT(U0505AA):   IF PUT( BMSMKT!!BMSPRD, $PRD2RPT. ) EQ "Y";
+SYMBOLGEN:  Macro variable UMONTH resolves to 2
+MLOGIC(U0505AA):  %IF condition &umonth = 1 is FALSE
+SYMBOLGEN:  Macro variable UCYTD resolves to 07
+MPRINT(U0505AA):   CURYTD = SUM ( OF TDIME1 - TDIME07 );
+MPRINT(U0505AA):   CURMTH = TDIME1;
+MPRINT(U0505AA):   MKTPRDC = BMSMKT!!BMSPRD!!CATEGORY;
+MPRINT(U0505AA):   KEEP MKTPRDC CURYTD CURMTH CATEGORY;
+MLOGIC(U0505AA):  %DO loop index variable UMONTH is now 3; loop will not iterate again.
+MPRINT(U0505AA):   RUN;
+
+ERROR 31-185: Format $PRD2RPT is unknown.
+
+NOTE: Numeric values have been converted to character values at the places given by: 
+      (Line):(Column).
+      1:29    1:37    1:118   1:126   1:134   
+NOTE: The SAS System stopped processing this step because of errors.
+WARNING: The data set WORK.U0505AA2 may be incomplete.  When this step was stopped there 
+         were 0 observations and 4 variables.
+NOTE: DATA statement used:
+      time:                           memory:
+         real        2.557 seconds       page faults   3 
+         user cpu    0.141 seconds       page reclaims 0 
+         system cpu  0.084 seconds       usage         28 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     39
+         output      5                   involuntary   9
+      
+
+
+WARNING: The BASE Product product with which SUMMARY is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   PROC SUMMARY DATA = U0505AA1 SUM;
+MPRINT(U0505AA):   CLASS MKTPRDC;
+MPRINT(U0505AA):   VAR PREYTD;
+MPRINT(U0505AA):   OUTPUT SUM= OUT=U0505AA3 ( DROP = _FREQ_ _TYPE_ LABEL= Prev Mnth Sums 
+by Mkt Prd Cat ) ;
+MPRINT(U0505AA):   RUN;
+
+NOTE: No observations in data set WORK.U0505AA1.
+NOTE: The data set WORK.U0505AA3 has 0 observations and 2 variables.
+NOTE: PROCEDURE SUMMARY used:
+      time:                           memory:
+         real        2.173 seconds       page faults   7 
+         user cpu    0.022 seconds       page reclaims 0 
+         system cpu  0.063 seconds       usage         26 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     19
+         output      4                   involuntary   2
+      
+
+WARNING: The BASE Product product with which SUMMARY is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   PROC SUMMARY DATA = U0505AA2 SUM;
+MPRINT(U0505AA):   CLASS MKTPRDC;
+MPRINT(U0505AA):   VAR CURYTD CURMTH;
+MPRINT(U0505AA):   OUTPUT SUM= OUT=U0505AA4 ( DROP = _FREQ_ _TYPE_ LABEL= Cur Mnth Sums by 
+Mkt Prd Cat ) ;
+MPRINT(U0505AA):   RUN;
+
+11 The SAS System
+
+NOTE: No observations in data set WORK.U0505AA2.
+NOTE: The data set WORK.U0505AA4 has 0 observations and 3 variables.
+NOTE: PROCEDURE SUMMARY used:
+      time:                           memory:
+         real        2.641 seconds       page faults   2 
+         user cpu    0.020 seconds       page reclaims 0 
+         system cpu  0.056 seconds       usage         26 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     13
+         output      4                   involuntary   1
+      
+
+WARNING: The BASE Product product with which SQL is associated will expire within 30 days. 
+         Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   PROC SQL;
+MPRINT(U0505AA):   CREATE TABLE U0505AA5 ( LABEL= "Join Cur and Prev Month" ) AS SELECT 
+A.MKTPRDC AS MKTPRD_C, PREYTD AS PRE_YTD, CURMTH AS CUR_MTH, (PREYTD + CURMTH) AS 
+CALC_YTD, CURYTD AS ACT_YTD, ((PREYTD + CURMTH) - CURYTD) AS DIFF_YTD, (((PREYTD + CURMTH) 
+- CURYTD)/ CURYTD) AS DPCT_YTD FROM U0505AA3 AS A, U0505AA4 AS B WHERE A.MKTPRDC = 
+B.MKTPRDC ;
+NOTE: Table WORK.U0505AA5 created, with 0 rows and 7 columns.
+
+MPRINT(U0505AA):   QUIT;
+NOTE: PROCEDURE SQL used:
+      time:                           memory:
+         real        4.235 seconds       page faults   17 
+         user cpu    0.064 seconds       page reclaims 0 
+         system cpu  0.158 seconds       usage         448 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     48
+         output      4                   involuntary   16
+      
+
+WARNING: The BASE Product product with which DATASTEP is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   DATA U0505AA6 ( LABEL = Prep for Print );
+SYMBOLGEN:  Macro variable UPMNTH resolves to      June
+SYMBOLGEN:  Macro variable UCMNTH resolves to      July
+MPRINT(U0505AA):   ATTRIB PRE_YTD LABEL = "     June@YTD" CUR_MTH LABEL = "     
+July@Month" CALC_YTD LABEL = "Computed@YTD" ACT_YTD LABEL = "Actual@YTD" DIFF_YTD LABEL = 
+"Difference@$" DPCT_YTD LABEL = "Difference@%" LCAT LABEL = "Description@Data Source" 
+MKTPRD LABEL = "BMS@Rpt#" ;
+MPRINT(U0505AA):   SET U0505AA5;
+MPRINT(U0505AA):   IF ( MKTPRD_C NE "" );
+MPRINT(U0505AA):   MKTPRD = SUBSTR( MKTPRD_C, 1, 6 );
+MPRINT(U0505AA):   SELECT ( SUBSTR ( MKTPRD_C, 7, 1 ) );
+SYMBOLGEN:  Macro variable UCAT1 resolves to DDD Supplemental(1)
+MPRINT(U0505AA):   WHEN ( '1' ) LCAT = " DDD Supplemental(1)";
+SYMBOLGEN:  Macro variable UCAT2 resolves to DDD Hospital(2)
+MPRINT(U0505AA):   WHEN ( '2' ) LCAT = " DDD Hospital(2)";
+SYMBOLGEN:  Macro variable UCAT3 resolves to Walsh DEA-Linked(O)
+MPRINT(U0505AA):   WHEN ( 'O' ) LCAT = " Walsh DEA-Linked(O)";
+SYMBOLGEN:  Macro variable UCAT4 resolves to Walsh AWP(X)
+MPRINT(U0505AA):   WHEN ( 'X' ) LCAT = " Walsh AWP(X)";
+MPRINT(U0505AA):   OTHERWISE RETURN;
+MPRINT(U0505AA):   END;
+MPRINT(U0505AA):   DROP MKTPRD_C;
+MPRINT(U0505AA):   MKTPRD = SUBSTR( MKTPRD_C, 1, 6 );
+NOTE: Line generated by the invoked macro "U0505AA".
+1          ;        output;        if mktprd ne lag(mktprd) then          do;             
+lcat = put ( mktprd, $bmp2nam. );            pre_ytd   =.;            cur_mth   =.;        
+12 The SAS System
+
+    calc_ytd  =.;            act_ytd   =.;            diff_ytd  =.;
+
+_________                                                                                  
+
+31
+MPRINT(U0505AA):   CATEGORY = SUBSTR( MKTPRD_C, 7, 1 );
+MPRINT(U0505AA):   OUTPUT;
+MPRINT(U0505AA):   IF MKTPRD NE LAG(MKTPRD) THEN DO;
+MPRINT(U0505AA):   LCAT = PUT ( MKTPRD, $BMP2NAM. );
+MPRINT(U0505AA):   PRE_YTD =.;
+MPRINT(U0505AA):   CUR_MTH =.;
+MPRINT(U0505AA):   CALC_YTD =.;
+MPRINT(U0505AA):   ACT_YTD =.;
+MPRINT(U0505AA):   DIFF_YTD =.;
+MPRINT(U0505AA):   DPCT_YTD =.;
+MPRINT(U0505AA):   CATEGORY = "0";
+MPRINT(U0505AA):   OUTPUT;
+MPRINT(U0505AA):   END;
+MPRINT(U0505AA):   RUN;
+
+ERROR 31-185: Format $BMP2NAM is unknown.
+
+NOTE: The SAS System stopped processing this step because of errors.
+WARNING: The data set WORK.U0505AA6 may be incomplete.  When this step was stopped there 
+         were 0 observations and 9 variables.
+NOTE: DATA statement used:
+      time:                           memory:
+         real        3.069 seconds       page faults   4 
+         user cpu    0.071 seconds       page reclaims 0 
+         system cpu  0.098 seconds       usage         25 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     41
+         output      5                   involuntary   8
+      
+
+
+WARNING: The BASE Product product with which SORT is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   PROC SORT DATA=U0505AA6 OUT=U0505AA7;
+MPRINT(U0505AA):   BY MKTPRD CATEGORY;
+MPRINT(U0505AA):   RUN;
+
+NOTE: The data set WORK.U0505AA7 has 0 observations and 0 variables.
+NOTE: PROCEDURE SORT used:
+      time:                           memory:
+         real        2.411 seconds       page faults   4 
+         user cpu    0.016 seconds       page reclaims 0 
+         system cpu  0.051 seconds       usage         6 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     15
+         output      4                   involuntary   3
+      
+
+MPRINT(U0505AA):   OPTIONS MISSING = ' ';
+SYMBOLGEN:  Macro variable UDATATYP resolves to Dollar
+MLOGIC(U0505AA):  %IF condition &udatatyp eq Dollar is TRUE
+MLOGIC(U0505AA):  %LET (variable name is UPFX)
+WARNING: The BASE Product product with which FORMAT is associated will expire within 30 
+         days. Please contact your SAS installation representative to have it renewed.
+MPRINT(U0505AA):   PROC FORMAT;
+SYMBOLGEN:  Macro variable UPFX resolves to $
+13 The SAS System
+
+SYMBOLGEN:  Macro variable UPFX resolves to $
+MPRINT(U0505AA):   PICTURE DIFDLR LOW-<0 = '000,000,009)' (PREFIX="($") 0-HIGH = 
+'000,000,009' (PREFIX="$") ;
+MPRINT(U0505AA):   PICTURE DIFPCT LOW-<0='000,009.99%)' (PREFIX='(') 0-HIGH='000,009.99%' ;
+MPRINT(U0505AA):   RUN;
+
+WARNING: RUN statement ignored due to previous errors. Type QUIT; to terminate the 
+         procedure.
+NOTE: PROCEDURE FORMAT used:
+      time:                           memory:
+         real        2.726 seconds       page faults   1 
+         user cpu    0.020 seconds       page reclaims 0 
+         system cpu  0.054 seconds       usage         8 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     11
+         output      4                   involuntary   6
+      
+
+MPRINT(U0505AA):   OPTIONS LS=130 PS=114;
+WARNING: The BASE Product product with which PRINTTO is associated will expire within 30 days. Please contact your SAS 
+         installation representative to have it renewed.
+SYMBOLGEN:  Macro variable UOTFLT resolves to /xxxxxxxx/daily/u0505aa1.ctl
+MPRINT(U0505AA):   PROC PRINTTO PRINT="/xxxxxxxx/daily/u0505aa1.ctl" NEW;
+MPRINT(U0505AA):   RUN;
+
+NOTE: PROCEDURE PRINTTO used:
+      time:                           memory:
+         real        0.440 seconds       page faults   0 
+         user cpu    0.005 seconds       page reclaims 0 
+         system cpu  0.008 seconds       usage         0 K
+      block I/O operations:           context switches:
+         input       1                   voluntary     3
+         output      1                   involuntary   0
+      
+
+MPRINT(U0505AA):   *UTLTYTL ( UTITLE=&UTITLE, UOBJ=&UOBJ, UIN=6 TO 18 DATABASES, UOT=&UOTFLT );
+MPRINT(U0505AA):   TITLE1 " ";
+SYMBOLGEN:  Macro variable UTITLE resolves to Vendor Year-to-Date Report PreAlign Dollars
+MPRINT(U0505AA):   TITLE2 "Vendor Year-to-Date Report PreAlign Dollars";
+SYMBOLGEN:  Macro variable UCMNTH resolves to      July
+SYMBOLGEN:  Macro variable UYR resolves to 1996
+SYMBOLGEN:  Macro variable UDATATYP resolves to Dollar
+MPRINT(U0505AA):   TITLE3 "Data Month      July 1996 Dollar data";
+MPRINT(U0505AA):   TITLE4 "Nation Summary";
+MPRINT(U0505AA):   FOOTNOTE
+MLOGIC(COPYRITE):  Beginning execution.
+MLOGIC(COPYRITE):  Ending execution.
+MPRINT(U0505AA):   "Copyright 1996  Horizon Systems Inc.";
+WARNING: The BASE Product product with which PRINT is associated will expire within 30 days. Please contact your SAS installation 
+         representative to have it renewed.
+MPRINT(U0505AA):   PROC PRINT NOOBS DATA=U0505AA7 LABEL SPLIT="@";
+WARNING: Variable PRE_YTD not found in data set WORK.U0505AA7.
+WARNING: Variable CUR_MTH not found in data set WORK.U0505AA7.
+WARNING: Variable CALC_YTD not found in data set WORK.U0505AA7.
+WARNING: Variable ACT_YTD not found in data set WORK.U0505AA7.
+ERROR: Format DIFDLR not found or couldn't be loaded.
+MPRINT(U0505AA):   FORMAT PRE_YTD CUR_MTH CALC_YTD ACT_YTD DOLLAR15. DIFF_YTD DIFDLR. DPCT_YTD DIFPCT. ;
+MPRINT(U0505AA):   BY MKTPRD;
+ERROR: Variable MKTPRD not found.
+MPRINT(U0505AA):   ID MKTPRD;
+ERROR: Variable MKTPRD not found.
+ERROR: Variable LCAT not found.
+ERROR: Variable PRE_YTD not found.
+ERROR: Variable CUR_MTH not found.
+ERROR: Variable CALC_YTD not found.
+ERROR: Variable ACT_YTD not found.
+ERROR: Variable DIFF_YTD not found.
+MPRINT(U0505AA):   VAR LCAT PRE_YTD CUR_MTH CALC_YTD ACT_YTD DIFF_YTD DPCT_YTD ;
+ERROR: Variable DPCT_YTD not found.
+ERROR: Variable PRE_YTD not found.
+ERROR: Variable CUR_MTH not found.
+ERROR: Variable CALC_YTD not found.
+ERROR: Variable ACT_YTD not found.
+ERROR: Variable DIFF_YTD not found.
+MPRINT(U0505AA):   SUM PRE_YTD CUR_MTH CALC_YTD ACT_YTD DIFF_YTD DPCT_YTD ;
+ERROR: Variable DPCT_YTD not found.
+MPRINT(U0505AA):   RUN;
+
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: PROCEDURE PRINT used:
+      time:                           memory:
+         real        0.174 seconds       page faults   4 
+         user cpu    0.024 seconds       page reclaims 0 
+         system cpu  0.032 seconds       usage         4 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     28
+         output      0                   involuntary   1
+      
+
+
+WARNING: The BASE Product product with which PRINTTO is associated will expire within 30 days. Please contact your SAS 
+         installation representative to have it renewed.
+MPRINT(U0505AA):   PROC PRINTTO;
+MPRINT(U0505AA):   RUN;
+
+NOTE: PROCEDURE PRINTTO used:
+      time:                           memory:
+         real        0.003 seconds       page faults   0 
+         user cpu    0.002 seconds       page reclaims 0 
+         system cpu  0.002 seconds       usage         0 K
+      block I/O operations:           context switches:
+         input       0                   voluntary     0
+         output      0                   involuntary   1
+      
+
+SYMBOLGEN:  Macro variable UOTFLT resolves to /xxxxxxxx/daily/u0505aa1.ctl
+MPRINT(U0505AA):   DM "inc '/xxxxxxxx/daily/u0505aa1.ctl'";
+NOTE: DM statements are only valid in DMS mode.
+MPRINT(U0505AA):  RUN;
+SYMBOLGEN:  Macro variable UPRN resolves to no
+MLOGIC(U0505AA):  %IF condition &uprn eq yes is FALSE
+MLOGIC(U0505AA):  Ending execution.
+14 The SAS System
+
+
+NOTE: AUTOEXEC processing completed.
+
+1          %macro u0505aa
+2            (
+3          
+4             utitle=Vendor Year-to-Date Report,
+5          
+6             uobj=u0505aa,
+7          
+8             /*----------------------------------------------*\
+9             | Control Section                                |
+10            \*----------------------------------------------*/
+11         
+12            ucdte= 199602,
+13            updte= 199601,
+14         
+15            udatatyp=Dollar,
+16         
+17         
+18            udbug=yes,
+19            uprn =yes,
+20         
+21            ucat1  =DDD Supplemental(1),
+22            ucat2  =DDD Hospital(2),
+23            ucat3  =Walsh DEA-Linked(O),
+24            ucat4  =Walsh AWP(X),
+25         
+26            /*----------------------------------------------*\
+27            | Inputs                                         |
+28            \*----------------------------------------------*/
+29         
+30            ulibr   = /xxxxxxxx/yearly/199603/library, /* format library */
+31            uinfmt  = prd2rpt,
+32         
+33            uin6    = /xxxxxxxx/monthly/&udte/u06,     /* mktprd list    */
+34            uin6mem = u03ia1,
+35         
+36            uin11   = /xxxxxxxx/monthly/199603/u09,    /* previous month */
+37            uinp1   = u05aa,
+38            uinp2   = u05da,
+39         
+40            uin12   = /xxxxxxxx/monthly/199603/u10,    /* previous month */
+41            uinp3   = u05ba,
+42            uinp4   = u05ca,
+43         
+44            uin21   = /xxxxxxxx/monthly/199603/u09,    /* current  month */
+45            uinc1   = u05aa,
+46            uinc2   = u05da,
+47         
+48            uin22   = /xxxxxxxx/monthly/199603/u10,    /* current  month */
+49            uinc3   = u05ba,
+50            uinc4   = u05ca,
+51         
+52            /*----------------------------------------------*\
+53            | Outputs                                        |
+54            \*----------------------------------------------*/
+55         
+56         
+57            uot = /xxxxxxxx/daily/tmp,
+58            uotmem = u0505aa1,
+59         
+60            uotflt=/home/deangel/tmp/u0505aa.ctl,
+61         
+62            uflop = 02.01.01
+63         
+64           )
+65           / des ="BMS Vendor Year-to-Date Report";
+66         
+67          options obs=9000;run;
+68         
+69         
+70          %if &udbug = yes %then    %utlopts;
+71          %else                     %utlnopts;
+72         
+73          %utlstrt;
+74         
+75          %let uyr = %substr(&ucdte,1,4);
+76         
+77          data _null_;
+78         
+79            mnth = input("&ucdte.01",yymmdd8.);
+80            cmnth  = put(mnth,monname.);
+81            call symput('ucmnth',cmnth);     /* Feb */
+82         
+83            mnth = input("&updte.01",yymmdd8.);
+84            pmnth = put(mnth,monname.);
+85            call symput('upmnth',pmnth);     /* Jan */
+86         
+87         run;
+88         
+89          libname  library "&ulibr";   /* get mkt list */
+90         
+91          libname  uin6    "&uin6" ;
+92         
+93          libname  uin11   "&uin11";
+94          libname  uin12   "&uin12";
+95         
+96          libname  uin21   "&uin21";
+97          libname  uin22   "&uin22";
+98         
+99          libname  uot     "&uot";
+100         run;
+101        
+102        
+103        
+104         %let upytd = %eval ( %substr( &updte, 5, 2 ) );  /* if updte=199607 then upytd = 7 */
+105         %let ucytd = %eval ( %substr( &ucdte, 5, 2 ) );  /* if updte=199607 then upytd = 7 */
+106        
+107        
+108          *u0012mkt
+109            (insdl=uin6,    /* Build BMS Mkt array */
+15 The SAS System
+
+110             insdn=&uin6mem
+111            );
+112        
+113          %let u0012mkt = 2;       /* for testing */
+114          %let u00121   = 002;     /* for testing */
+115          %let u00122   = 003;     /* for testing */
+116        
+117        
+118           %do umonth = 1 %to 2;
+119        
+120              data
+121                     u0505aa&umonth          /* previous month */
+122        
+123                   (
+124                     label="&umonth 1-pre 2-cur Mkt Prd and cats"
+125                   );
+126        
+127        
+128                 set
+129        
+130                    %do uk = 1 %to 4;                  /* aa da ba ca     */
+131        
+132                        %do ui = 1 %to &u0012mkt;      /* 002 003 600 999 */
+133        
+134                            %if &umonth = 1 %then      /* 1 2             */
+135        
+136                                %do;
+137        
+138                                    %if &uk le 2 %then
+139                                        %str(uin11.&&uinp&uk.&&u0012&ui);  /* previous month  aa da */
+140        
+141                                    %else
+142                                        %str(uin12.&&uinp&uk.&&u0012&ui);  /* previous month  ba ca */
+143        
+144                                %end;
+145        
+146                            %else
+147        
+148                                %do;
+149        
+150                                    %if &uk le 2 %then
+151                                        %str(uin21.&&uinc&uk.&&u0012&ui);  /* current  month  aa da */
+152        
+153                                    %else
+154                                        %str(uin22.&&uinc&uk.&&u0012&ui);  /* current  month  ba ca */
+155                                %end;
+156        
+157                        %end;
+158        
+159                    %end;
+160        
+161               ;
+162        
+163        
+164        
+165              if put( bmsmkt!!bmsprd, $prd2rpt. ) eq "Y";
+166        
+167        
+168               %if &umonth = 1 %then  /* previous month  */
+169        
+170                    %do;
+171        
+172                      preytd =  sum ( of tdime1 - tdime&upytd );
+173        
+174                      mktprdc = bmsmkt!!bmsprd!!category;
+175        
+176                      keep mktprdc preytd category;
+177        
+178                    %end;
+179        
+180        
+181               %else
+182        
+183                    %do;
+184        
+185                      curytd =  sum ( of tdime1 - tdime&ucytd );
+186        
+187                      curmth =  tdime1;
+188        
+189                      mktprdc = bmsmkt!!bmsprd!!category;
+190        
+191                      keep mktprdc curytd curmth category;
+192        
+193                    %end;
+194        
+195           %end;
+196        
+197           run;
+198        
+199        
+200          proc summary data = u0505aa1 sum;
+201        
+202               class mktprdc;
+203        
+204               var preytd;
+205        
+206          output  sum=  out=u0505aa3
+207             (
+208                  drop = _freq_ _type_
+209                  label= "Prev Mnth Sums by Mkt Prd Cat"
+210              )
+211          ;
+212         run;
+213        
+214        
+215          proc summary data = u0505aa2 sum;
+216        
+217               class mktprdc;
+218        
+219               var curytd curmth;
+220        
+221          output  sum=  out=u0505aa4
+16 The SAS System
+
+222             (
+223                  drop = _freq_ _type_
+224                  label= "Cur Mnth Sums by Mkt Prd Cat"
+225              )
+226          ;
+227         run;
+228        
+229        
+230         proc sql;
+231        
+232        
+233             create  table u0505aa5
+234                            (
+235                              label= "Join Cur and Prev Month"
+236                            )   as
+237        
+238             select
+239        
+240                     a.mktprdc                                        as mktprd_c,
+241                     preytd                                           as pre_ytd,
+242                     curmth                                           as cur_mth,
+243                     (preytd  + curmth)                               as calc_ytd,
+244                     curytd                                           as act_ytd,
+245                     ((preytd  + curmth) - curytd)                    as diff_ytd,
+246                     (((preytd  + curmth) - curytd)/ curytd)          as dpct_ytd
+247        
+248             from
+249                     u0505aa3 as a,
+250                     u0505aa4 as b
+251        
+252             where
+253                     a.mktprdc  =  b.mktprdc
+254        
+255        ;
+256        
+257        quit;
+258        
+259        data u0505aa6
+260              (
+261               label = "Prep for Print"
+262              );
+263        
+264        
+265            attrib  pre_ytd    label = "&upmnth@YTD"
+266                    cur_mth    label = "&ucmnth@Month"
+267                    calc_ytd   label = "Computed@YTD"
+268                    act_ytd    label = "Actual@YTD"
+269                    diff_ytd   label = "Difference@$"
+270                    dpct_ytd   label = "Difference@%"
+271                    lcat       label = "Description@Data Source"
+272                    mktprd     label = "BMS@Rpt#"
+273            ;
+274        
+275        
+276             set u0505aa5;
+277        
+278             if ( mktprd_c ne "" );
+279        
+280             mktprd   = substr( mktprd_c, 1, 6 );
+281        
+282        
+283             select ( substr ( mktprd_c, 7, 1 ) );
+284        
+285                    when ( '1' ) lcat = " &ucat1";
+286                    when ( '2' ) lcat = " &ucat2";
+287                    when ( 'O' ) lcat = " &ucat3";
+288                    when ( 'X' ) lcat = " &ucat4";
+289        
+290                    otherwise    return;
+291        
+292             end;
+293        
+294        
+295             drop mktprd_c;
+296        
+297        
+298             mktprd   = substr( mktprd_c, 1, 6 );
+299             category = substr( mktprd_c, 7, 1 );
+300        
+301        
+302             output;
+303        
+304        
+305             if mktprd ne lag(mktprd) then
+306        
+307                do;
+308        
+309                   lcat = put ( mktprd, $bmp2nam. );
+310                   pre_ytd   =.;
+311                   cur_mth   =.;
+312                   calc_ytd  =.;
+313                   act_ytd   =.;
+314                   diff_ytd  =.;
+315                   dpct_ytd  =.;
+316        
+317                   category = "0";
+318        
+319                   output;
+320        
+321                end;
+322        
+323        
+324        
+325        run;
+326        
+327        proc sort data=u0505aa6 out=u0505aa7;
+328              by mktprd category;
+329        run;
+330        
+331        
+332        options missing = ' ';
+333        
+17 The SAS System
+
+334        %if &udatatyp eq Dollar %then %let upfx = $;
+335        %else %let &uprx=%str();
+336        
+337        proc format;
+338        
+339             picture difdlr
+340                    low-<0 = '000,000,009)'   (prefix="(&upfx")
+341                    0-high = '000,000,009'    (prefix="&upfx")
+342             ;
+343        
+344             picture difpct
+345                    low-<0='000,009.99%)'    (prefix='(')
+346                    0-high='000,009.99%'
+347             ;
+348        run;
+349        
+350        
+351        options ls=130 ps=114;
+352        
+353        proc printto print="&uotflt" new;
+354        run;
+355        
+356        *utltytl
+357           ( utitle=&utitle,
+358             uobj=&uobj,
+359             uin=6 to 18 Databases,
+360             uot=&uotflt
+361           );
+362        
+363        title1   " ";
+364        title2   "&utitle";
+365        title3   "Data Month &ucmnth &uyr &udatatyp data";
+366        title4   "Nation Summary";
+367        footnote "%copyrite";
+368        
+369        
+370        proc print noobs data=u0505aa7 label split="@";
+371        
+372             format
+373                    pre_ytd
+374                    cur_mth
+375                    calc_ytd
+376                    act_ytd  dollar15.
+377                    diff_ytd difdlr.
+378                    dpct_ytd difpct.
+379             ;
+380        
+381             by mktprd;
+382             id mktprd;
+383        
+384             var lcat
+385                 pre_ytd
+386                 cur_mth
+387                 calc_ytd
+388                 act_ytd
+389                 diff_ytd
+390                 dpct_ytd
+391             ;
+392        
+393             sum
+394                 pre_ytd
+395                 cur_mth
+396                 calc_ytd
+397                 act_ytd
+398                 diff_ytd
+399                 dpct_ytd
+400             ;
+401        run;
+402        
+403        proc printto;
+404        run;
+405        
+406        dm "inc '&uotflt'";run;
+407        
+408        %if &uprn eq yes %then %utlhplj(uprtin=&uotflt);
+409        
+410        
+411        %mend u0505aa;
+
+ERROR: Errors printed on pages 7,9,10,12,13.
+
+NOTE: The SAS System used:
+      time:                           memory:
+         real        39.897 seconds      page faults   149 
+         user cpu    1.572 seconds       page reclaims 0 
+         system cpu  2.021 seconds       usage         1.41 M
+      block I/O operations:           context switches:
+         input       1                   voluntary     713
+         output      53                  involuntary   230
+      
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
