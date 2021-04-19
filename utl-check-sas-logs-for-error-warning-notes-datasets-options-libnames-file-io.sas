@@ -1,6 +1,22 @@
 Check sas logs for error warning notes datasets options libnames file-io;                                                                   
                                                                                                                                             
 This requires the Classic 1980s SAS editor.                                                                                                 
+                                                                            
+You can run the log check from a function key. keystroke or a mouse action. 
+Here is how.                                                                
+                                                                            
+if the cwd, curent workinf directory, is C;/utl and                         
+you put this on a function key                                              
+                                                                            
+home;log;home;file c r;gsubmit '%utl_logcurchk(c:/utl/c.log);'              
+                                                                            
+Here is what wil happen                                                     
+                                                                            
+   1. The current contents of the log will be saved in c:/utl/c.log         
+   2. gsubmit '%utl_logcurchk(c:/utl/c.log);'  will run the macro           
+   3. Editor window 'note i.i' will popup witht he results of the logchecl  
+   4. Editor window 'note h.h' will have the log                            
+                                                                            
                                                                                                                                             
 If editor windows 'note i.i;'(log check), and 'note h.h;'(orginal log) do not pop up in                                                     
 your interactive session then just type note h.h and note i.i on any 1980s clean classic command line;                                      
