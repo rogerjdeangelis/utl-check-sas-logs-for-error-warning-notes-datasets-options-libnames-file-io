@@ -8,7 +8,7 @@ Here is how.
 if the cwd, curent workinf directory, is C;/utl and                         
 you put this on a function key                                              
                                                                             
-home;log;home;file c r;gsubmit '%utl_logcurchk(c:/utl/c.log);'              
+home;log;home;file c r;gsubmit '%utl_logcurchk(.\c.log,.\c.txt);'              
                                                                             
 Here is what wil happen                                                     
                                                                             
