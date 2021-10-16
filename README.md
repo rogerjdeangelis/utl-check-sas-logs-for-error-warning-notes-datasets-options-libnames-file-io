@@ -13,11 +13,12 @@
     |_|                                                                                                                                  
     */                                                                                                                                   
                                                                                                                                          
-    * Just hit Function Key 7 or map to logitech G203 gamming mousemouse actions log summary will appear in output window                
+    * Just hit Function Key 7 or map to logitech G203 gamming mouse actions.
+      The log summary will appear in output window                
                                                                                                                                          
     PF7: log;file "pgm.log" r;note zx;notesubmit '%utl_logcurchk;';                                                                      
                                                                                                                                          
-    Saves the log in the present working directory as pgg.log and then executes the log chec                                             
+    Saves the log in the present working directory as pgm.log and then executes the log check                                             
                                                                                                                                          
     /*           _               _                                                                                                       
       ___  _   _| |_ _ __  _   _| |_                                                                                                     
