@@ -12,7 +12,8 @@ Works best in the 1980 DMS Editor?
 |_|
 */
 
-* Just hit Function Key 7 or map to logitech G203 gamming mousemouse actions log summary will appear in output window
+* Just hit Function Key 7 or map to logitech G203 gamming mouse actions.
+  The log summary will appear in output window;
 
 PF7: log;file "pgm.log" r;note zx;notesubmit '%utl_logcurchk;';
 
